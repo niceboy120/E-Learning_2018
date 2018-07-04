@@ -21,9 +21,9 @@
 			Eine Klasse beschreibt eine Menge von Objekten mit gleicher Struktur und gleichem Verhalten. Dabei wird die Struktur durch Attribute und das Verhalten durch Operationen beschrieben.
 			Als Klassenname sollte ein möglichst aussagekräftiges Substantiv gewählt werden.
 		</p>
-		<h3>Notation<h3>
+		<h3>Notation</h3>
 			
-			<figure class="right" style="width:300px;">
+			<figure class="right einzel" style="width:300px;">
 				<img src="bilder/klasse_beispiel.PNG" style="width:300px;" />
 				<figcaption>Bild 1: Konvention für die Notation einer Klasse</figcaption>
 			</figure>
@@ -40,7 +40,7 @@
 			Abstrakte Klassen werden durch einen Kursiven Klassennamen oder das Schlüsselwort "abstract" gekennzeichnet.
 		</p>
 		
-		<figure style="width:500px;">
+		<figure class="einzel" style="width:500px;">
 			<img src="bilder/abstrakte_klasse.PNG" style="width:500px;" />
 			<figcaption>Bild 2: Kennzeichnung einer abstrakten Klasse</figcaption>
 		</figure>
@@ -52,7 +52,7 @@
 		Für die Sichtbarkeiten gibt es folgende Möglichkeiten:
 		</p>
 		
-		<figure class="right" style="width:300px;">
+		<figure class="right einzel" style="width:300px;">
 			<img src="bilder/abgeleitetes_attribut.PNG" style="width:300px;" />
 			<figcaption>Bild 3: Kennzeichnung eines abgeleiteten Attributs</figcaption>
 		</figure>
@@ -90,7 +90,7 @@
 			Einschränkungen sind Zusicherungen, die immer erfüllt sein müssen. Beispielsweise kann Sichergestellt werden, dass ein Attribut größer ist, als ein anderes.
 		</p>
 		
-		<figure style="width:500px;">
+		<figure class="einzel" style="width:500px;">
 			<img src="bilder/einschraenkung.PNG" style="width:500px;" />
 			<figcaption>Bild 4: Beispiel für eine Einschränkung</figcaption>
 		</figure>
@@ -101,7 +101,105 @@
 		
 	<h2>Operationen</h2>
 		<p>
-		
+			Operationen beschreiben das Verhalten von Klassen oder deren Objekte. Eine Methode ist die Implementierung eines bestimmten Verhaltens.
+			Alle Objekteeiner Klasse haben die selben Operationen und Operationen können auf Attribute zugreifen und
+			diese verändern. Operationen können in zwei Kategorien eingeteilt werden: Objektoperationen und Klassenoperationen.
+			Eine Objektoperation wird auf ein bestehendes Objekt angewendet und kann Beispielsweise die Attributwerte verändern,
+			wohingegen Klassenoperationen auf die Klasse angewendet werden und somit dafür genutzt werden können,
+			Klassenattribute zu manipulieren. Ein Beispiel für Klassenoperationen sind Konstruktoren. Klassenoperationen
+			werden unterstrichen notiert.
 		</p>
-		
+
+		<p>
+			Operationen werden üblicherweise im zweiten compartment notiert und folgen der Sytax:
+			<p><i>Sichtbarkeit Name ( Parameter ): Rückgabetyp {Einschränkungen}</i>.</p>
+			Sichtbarkeit und Name werden dabei analog zu den Attributen verwendet, allerdings sollte als Name ein aussagekräftiges
+			Verb gewählt werden.
+		</p>
+
+		<p>
+			Parameter folgen der Syntax:
+			<p><i>Name : Typ [Multiplizität] = DefaultWert {Einschränkungen}</i>.</p>
+			Name, Typ, Multiplizität und Einschränkungen sind dabei analog zu den Attributen zu verwenden.
+			<p>
+				Der DefaultWert beschreibt den Standeardwert, der übergeben wird, falls kein Wert explizit übergeben wurde.
+			</p>
+		</p>
+		<p>
+			Der Rückgabewert einer Operation ist optional anzugeben und ist entweder ein Datentyp oder eine Klasse.
+			Falls keine Rückgabe erfolgt, ist der Datentyp "void".
+		</p>
+		<p>
+			Für die Einschränkungen gibt es bei Operationen folgenden Möglichkeiten:
+			<ul>
+				<li><b>Preconditions:</b> zu erfüllende Bedingungen für die aktivierung der Operation</li>
+				<li><b>Postconditions:</b> Zusicherung über den Zustand des Systems nach der Ausführung</li>
+				<li><b>Body conditions:</b> Einschränkungen des Rückgabewerts</li>
+			</ul>
+		</p>
+		<p>
+		Operationen müssen innerhalb einer Klasse eindeutig sein und unterscheiden sich in Name, Parameterliste und Rückgabetyp.
+		Abstrakte Operationen existieren in abstrakten Klassen und haben keine Methode, nur eine Signatur. Sie können nicht aktiviert werden.
+		</p>
+
+		<h2>Beziehungen</h2>
+
+			<h3>Generalisierung</h3>
+				<p>
+					Eine Generalisierung ist eine Beziehung zwischen einer generellen und einer spezielleren Klasse.
+					Sie führt dazu, dass alle in der generellen Klasse vorhandenen Merkmale auch in der spezielleren Klasse verfügbar sind.
+					Dies wird auch als Vererbung bezeichnet.
+				</p>
+
+
+
+			<h3>Assoziation</h3>
+				<p>
+					Eine Assoziation ist eine Beziehung zwischen zwei oder mehreren Klassen. Diese wird verwendet, wie beim
+					Objektdiagramm und kann ebenfalls mit Multiplizitäten versehen werden.
+				</p>
+
+			<h3>Aggregation und Komposition</h3>
+				<p>
+					Aggregation und Komposition beschreiben die Beziehung zwischen einem Ganzen und seinen Teilen.
+					Eine Komposition wird durch eine ausgefüllte Raute mit der Multiplizität 1 (oder 1..1) dargestellt,
+					eine Aggregation durch eine leere Raute mit der Kardinalität 0..*. Eine Komposition ist ein
+					Spezialfall der Aggregation und bedient den Fall, dass die Teile nicht ohne ihr Ganzes existieren können (Existenzabhängigkeit).
+					Ein Beispiel für den Unterschied wäre:
+					<ul>
+						<li>(Komposition:) Ein Raum kann nicht ohne Gebäude existieren.</li>
+						<li>(Aggregation:) Ein Student kann ohne Vorlesung existieren.</li>
+					</ul>
+				</p>
+
+				<figure class="gesamt">
+					<figure class="einzel" style="width:300px;">
+						<img src="bilder/generalisierung.PNG" style="width:300px;" />
+						<figcaption>Bild 5: Beispiel für eine Generalisierung</figcaption>
+					</figure>
+
+					<figure class="einzel" style="width:300px;">
+						<img src="bilder/assoziation.PNG" style="width:300px;" />
+						<figcaption>Bild 6: Beispiel für eine Assoziation</figcaption>
+					</figure>
+
+					<figure class="einzel" style="width:300px;">
+						<img src="bilder/komposition_aggregation.PNG" style="width:300px;" />
+						<figcaption>Bild 7: Beispiel für eine Aggregation und Komposition</figcaption>
+					</figure>
+				</figure>
+
+		<h2>Das Klassendiagramm</h2>
+			<p>
+				Im Klassendiagramm werden nun die aus der Realität möglicherweise mittels Objektdiagramm abgeleiteten
+				Klassen mit ihren Beziehungen untereinander dargestellt. Dies bietet eine Grundlage um objektorientierte
+				Entwürfe zu Implementieren oder bestehenden Code verständlich darzustellen.
+			</p>
+
+		<figure class="einzel" style="width:600px;">
+			<img src="bilder/klassendiagramm.PNG" style="width:600px;" />
+			<figcaption>Bild 8: Beispiel für ein Klassendiagramm</figcaption>
+		</figure>
+
+	</body>
 </html>
