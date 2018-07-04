@@ -8,3 +8,29 @@ p{
 h1{
 	font-family: arial;
 }
+
+figure{
+	position: relative;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid gainsboro;
+	background: white;
+	width:auto;
+	height:auto;
+}
+
+img{
+	width:auto;
+	max-width:70%;
+	height:auto;
+}
+
+figcaption {
+  padding: 10px;
+  text-align: center;
+  width=auto;
+}
+
+.right{
+	float: right;
+}

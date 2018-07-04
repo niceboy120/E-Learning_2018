@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+
+  <title>Klassendiagramme</title>
+  <meta name="description" content="UML-Modellierung, Elearning">
+  <meta name="author" content="Gleißner, André und Brandt, Leon">
+	<link rel="stylesheet" href="style.css">
+
+	<script language="javascript">
+	function einblenden() {
+	document.getElementById('loesung').style.visibility="visible";
+	}
+	</script> 
+
+<body>
+	<h1>2.2.1. Objektdiagramme</h1>
+		<p>
+			Objekt sind Strukturdiagramme, die der Abstraktion der Realität dienen und damit eine Abbildung von realen Systemen
+			in den Kontext der objektorientierten Programmierung bieten. Sie werden meist in der objektorientierten Analyse und im Entwurf eines Projektes eingesetzt.
+			Die Hauptkomponenten eines Objektdiagrammes sind Objekte und Attribute und Relationen.
+		</p>
+	
+	<h2>Objekte</h2>
+		
+		<figure class="right" style="width:300px;">
+			<img src="bilder/objekt_notation.PNG" />
+			<figcaption>Bild 1: Notation eines Objektes ohne (oben) und mit Klassenzuordnung (unten) </figcaption>
+		</figure>
+		
+		<p>
+			Objekte modellieren Dinge (z.B. Auto), Personen (z.B. Schüler) oder Begriffe (z. B. Krankheit) und sind eindeutig identifizierbar.
+			Sie besitzen einen Zustand, der durch Attribute, Attributwerte und Beziehungen zu anderen Objekten definiert wird und ein bestimmtes Verhalten,
+			dass die verfügbaren Operationen des Objektes beschreibt.
+		</p>
+		
+		<h3>Notation</h3>
+			<p>
+				Ein Objekt wird als ein in "compartments" geteiltes Rechteck notiert. Im ersten compartment befindet sich entweder nur der Name des Objektes (objektname),
+				der Name des Objektes mit Klassenzuornung (objektname:Klasse) oder nur eine Klassenzuordnung bei einem anonymen Objekt (:Klasse).
+				Dabei ist zu beachten, dass Objektnamen immer klein und Klassennamen immer groß zu schreiben sind und beides einmal unterstrichen wird (siehe Bild 1).
+				Das zweite compartment ist optional und kann mit, im Kontext relevanten Attributen und Attributwerten gefüllt werden. Diese werden in der Form einer der folgenden Alternativen notiert:
+				<ul>
+					<li>attribut</li>
+					<li>attribut = Wert</li>
+					<li>attribut : Typ = Wert</li>
+				</ul>
+				
+				Es werden nur die Attribute aufgenommen, die für die zu behandelnde Problemstellung relevant sind.
+				
+				<bold>Übungsaufgabe:</bold> Wie würde der Student Ben, der 24 Jahre alt ist und im Hauptfach Informatik studiert als Objekt mit den Attributen: Name, Alter und Hauptfach modelliert werden?
+				<a href="#" onclick="einblenden();">Lösung einblenden</a><br> 
+			</p>
+			
+			<figure id="loesung" style="visibility:hidden;width:500px;">
+				<img src="bilder/objekt_beispiel.PNG" />
+				<figcaption>Bild 2: Lösung</figcaption>
+			</figure>
+			
+	<h2>Das Objektdiagramm</h2>
+	In einem Objektdiagramm werden nun die modellierten Objekte mit ihren Relationen untereinander dargestellt. Die Relationen werden durch einfache Linien zwischen den Objekten notiert.
+	Dabei können auch Arten der Beziehungen (Wie in Bild 3 dargestellt) an der Linie mit den Rollen eines Objektes im Verhältnis zum anderen Objekt angemerkt werden.
+		<figure style="width:500px;">
+			<img src="bilder/objektdiagramm_beispiel.png" />
+			<figcaption>Bild 3: Beispiel für ein Objektdiagramm</figcaption>
+		</figure>
+	
+</html>
