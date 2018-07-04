@@ -10,15 +10,98 @@
 	<link rel="stylesheet" href="style.css">
 
 <body>
-	<h1>2.2.1. Klassendiagramme</h1>
-	<p>
-		Klassendiagramme sind Strukturdiagramme, die der Abstraktion der Realität dienen und damit eine Abbildung von realen Systemen
-		in den Kontext der objektorientierten Programmierung bieten. Sie werden meist in der objektorientierten Analyse und im Entwurf eines Projektes eingesetzt.
-		Die Hauptkomponenten eines Klassendiagrammes sind Objekte, Klassen, Attribute und Operationen.
-	</p>
+	<h1>2.2.2. Klassendiagramme</h1>
+		<p>
+			Klassendiagramme sind ähnlich aufgebaut wie Objektdiagramme. Allerdings kommen zu den schon bekannten Komponenten (Objekte und Relationen) nun noch Klassen, Klassenattribute und Operationen hinzu.
+			Sie werden ebenfals in der Analysephase und in der Entwurfsphase der objektorientierten Programmierung eingesetzt.
+		</p>
 	
-	<h2>Objekte</h2>
 	<h2>Klassen</h2>
+		<p>
+			Eine Klasse beschreibt eine Menge von Objekten mit gleicher Struktur und gleichem Verhalten. Dabei wird die Struktur durch Attribute und das Verhalten durch Operationen beschrieben.
+			Als Klassenname sollte ein möglichst aussagekräftiges Substantiv gewählt werden.
+		</p>
+		<h3>Notation<h3>
+			
+			<figure class="right" style="width:300px;">
+				<img src="bilder/klasse_beispiel.PNG" style="width:300px;" />
+				<figcaption>Bild 1: Konvention für die Notation einer Klasse</figcaption>
+			</figure>
+			
+			<p>
+				Eine Klasse wird, wie ein Objekt als ein Rechteck bestehend aus verschiedenen compartments dargestellt. Prinzipiell ist die Anzahl der compartments frei wählbar.
+				Im ersten compartment befindet sich der Klassenname. Er beginnt mit einem Großbuchstaben und besteht aus einem im Paket eindeutigen, aussagekräftigen Namen.
+				Im zweiten compartment befinden sich die Attribute und im dritten compartment die Operationen der Klasse. In den darauf folgenden compartments können sich beliebige Informationen zur Klasse befinden.
+			</p>
+	
+	<h2>Abstrakte Klassen</h2>
+		<p>
+			Abstrakte Klassen sind Klassen, die nicht instanziiert werden können. Sie beinhalten Eigenschaften und Verhalten verschiedener Arten von Objekten, allerdings werden sie nicht durch die abstrakte Klasse implementiert.
+			Abstrakte Klassen werden durch einen Kursiven Klassennamen oder das Schlüsselwort "abstract" gekennzeichnet.
+		</p>
+		
+		<figure style="width:500px;">
+			<img src="bilder/abstrakte_klasse.PNG" style="width:500px;" />
+			<figcaption>Bild 2: Kennzeichnung einer abstrakten Klasse</figcaption>
+		</figure>
+		
 	<h2>Attribute</h2>
+		<p>
+		Bei Attributen handelt es sich um Eigenschaften von Klassen mit definiertem Typen. Die Attribute sind in allen Instanzen einer Klasse gleich, allerdings können sich Instanzen in ihren Attributwerten unterscheiden.
+		Sie befinden sich konventionell im zweiten compartment und werden mit der Syntax: <i>Sichtbarkeit / Name : Typ Multiplizität = Anfangswert {Einschränkungen}</i> notiert. Dabei sind alle Angaben, außer der Name optional.
+		Für die Sichtbarkeiten gibt es folgende Möglichkeiten:
+		</p>
+		
+		<figure class="right" style="width:300px;">
+			<img src="bilder/abgeleitetes_attribut.PNG" style="width:300px;" />
+			<figcaption>Bild 3: Kennzeichnung eines abgeleiteten Attributs</figcaption>
+		</figure>
+		
+		<ul>
+			<li><b>+</b> public</li>
+			<li><b>~</b> package</li>
+			<li><b>#</b> protected</li>
+			<li><b>-</b> private</li>
+		</ul>
+		
+		<p>
+			In der Objektorientierten Programmierung sind oft Attribute auf private gesetzt und werden nur durch Operationen verändert. Abgeleitete Attribute ergeben sich aus anderen Attributen und werden mit einem
+			Schrägstrich gekennzeichnet.
+		</p>
+		<p>
+			Ein Attributname beginnt mit einem Kleinbuchstaben und ist ein innerhalb der Klasse eindeutiges Substantiv.
+		</p>
+		<p>
+			Der Typ ist entweder ein Datentyp (&lt;&lt;datatype&gt;&gt;),
+			ein primitiver Datentyp (&lt;&lt;primitive&gt;&gt;), wie z.B. Boolean oder String, ein Aufzählungsdatentyp (&lt;&lt;enumeration&gt;&gt;) oder eine Klasse.
+		</p>
+		<p>
+			Die Multiplizität gibt an, wie viele Werte ein Attribut besitzen kann. Dabei werden die untere und die obere Schranke in eckigen Klammer angegeben:
+		</p>
+		<ul>
+			<li><b>[untere Schranke .. obere Schranke]</b></li>
+			<li><b>[1..1]->[1]</b> Standard</li>
+			<li><b>[*]</b> beliebig viele</li>
+			<li><b>[0..1]</b> optional</li>
+			<li><b>[m..n]</b> allgemein</li>
+		</ul>
+		
+		<p>
+			Einschränkungen sind Zusicherungen, die immer erfüllt sein müssen. Beispielsweise kann Sichergestellt werden, dass ein Attribut größer ist, als ein anderes.
+		</p>
+		
+		<figure style="width:500px;">
+			<img src="bilder/einschraenkung.PNG" style="width:500px;" />
+			<figcaption>Bild 4: Beispiel für eine Einschränkung</figcaption>
+		</figure>
+		
+		<p>
+			Bei Klassenattributen handelt es sich um eine Besonderes Attribut, dessen Wert bei der Instanziierung feststeht und für alle Objekte gilt. Ein Klassenattribut wird unterstrichen notiert.
+		</p>
+		
 	<h2>Operationen</h2>
+		<p>
+		
+		</p>
+		
 </html>
