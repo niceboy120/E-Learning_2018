@@ -9,10 +9,14 @@
   <meta name="author" content="Gleißner, André und Brandt, Leon">
 	<link rel="stylesheet" href="style.css">
 
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<script language="javascript">
-	function einblenden() {
-	document.getElementById('loesung').style.visibility="visible";
-	}
+		function einblenden() {
+			 $("#loesung").css("display", "block");
+		}
 	</script> 
 
 <body>
@@ -26,7 +30,7 @@
 	<h2>Objekte</h2>
 		
 		<figure class="right" style="width:300px;">
-			<img src="bilder/objekt_notation.PNG" />
+			<img src="bilder/objekt_notation.PNG" style="width:300px;" />
 			<figcaption>Bild 1: Notation eines Objektes ohne (oben) und mit Klassenzuordnung (unten) </figcaption>
 		</figure>
 		
@@ -49,19 +53,21 @@
 				</ul>
 				
 				Es werden nur die Attribute aufgenommen, die für die zu behandelnde Problemstellung relevant sind.
-				
+			</p>
+			<p>
 				<bold>Übungsaufgabe:</bold> Wie würde der Student Ben, der 24 Jahre alt ist und im Hauptfach Informatik studiert als Objekt mit den Attributen: Name, Alter und Hauptfach modelliert werden?
-				<a href="#" onclick="einblenden();">Lösung einblenden</a><br> 
+				<button onclick="einblenden()">Lösung</button>
 			</p>
 			
-			<figure id="loesung" style="visibility:hidden;width:500px;">
-				<img src="bilder/objekt_beispiel.PNG" />
+			<figure id="loesung" style="display:none;width:500px;">
+				<img src="bilder/objekt_beispiel.PNG" style="width:500px;" />
 				<figcaption>Bild 2: Lösung</figcaption>
 			</figure>
 			
 	<h2>Das Objektdiagramm</h2>
 	In einem Objektdiagramm werden nun die modellierten Objekte mit ihren Relationen untereinander dargestellt. Die Relationen werden durch einfache Linien zwischen den Objekten notiert.
 	Dabei können auch Arten der Beziehungen (Wie in Bild 3 dargestellt) an der Linie mit den Rollen eines Objektes im Verhältnis zum anderen Objekt angemerkt werden.
+		
 		<figure style="width:500px;">
 			<img src="bilder/objektdiagramm_beispiel.png" />
 			<figcaption>Bild 3: Beispiel für ein Objektdiagramm</figcaption>
