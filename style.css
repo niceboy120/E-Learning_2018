@@ -1,22 +1,37 @@
 body{
 	margin: 0em 2em 2em 2em;
+	background-color: #e5f3ff;
 }
 p{
 	font-family: arial;
-	font-size: 22px;
+	font-size: 20px;
 }
 h1{
 	font-family: arial;
+	font-size: 26;
+}
+h2{
+	font-family: arial;
+	font-size: 24;
+}
+h3{
+	font-family: arial;
+	font-size: 22;
+}
+
+ul{
+	font-family: arial;
+	font-size: 20px;
 }
 
 figure{
-	margin: 0;
+	margin: 20px;
 }
 
 figure.einzel{
 	display: inline-block;
 	position: relative;
-	margin: 0;
+	margin: 20px;
 	padding: 10px;
 	border: 1px solid gainsboro;
 	background: white;
@@ -32,4 +47,8 @@ figcaption {
 
 .right{
 	float: right;
+}
+
+.syntax{
+	background-color: #c0d2e2;
 }

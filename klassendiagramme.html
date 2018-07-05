@@ -16,6 +16,8 @@
 			Sie werden ebenfals in der Analysephase und in der Entwurfsphase der objektorientierten Programmierung eingesetzt.
 		</p>
 	
+	<hr noshade>
+	
 	<h2>Klassen</h2>
 		<p>
 			Eine Klasse beschreibt eine Menge von Objekten mit gleicher Struktur und gleichem Verhalten. Dabei wird die Struktur durch Attribute und das Verhalten durch Operationen beschrieben.
@@ -34,6 +36,8 @@
 				Im zweiten compartment befinden sich die Attribute und im dritten compartment die Operationen der Klasse. In den darauf folgenden compartments können sich beliebige Informationen zur Klasse befinden.
 			</p>
 	
+	<hr noshade>
+	
 	<h2>Abstrakte Klassen</h2>
 		<p>
 			Abstrakte Klassen sind Klassen, die nicht instanziiert werden können. Sie beinhalten Eigenschaften und Verhalten verschiedener Arten von Objekten, allerdings werden sie nicht durch die abstrakte Klasse implementiert.
@@ -44,7 +48,9 @@
 			<img src="bilder/abstrakte_klasse.PNG" style="width:500px;" />
 			<figcaption>Bild 2: Kennzeichnung einer abstrakten Klasse</figcaption>
 		</figure>
-		
+	
+	<hr noshade>
+	
 	<h2>Attribute</h2>
 		<p>
 		Bei Attributen handelt es sich um Eigenschaften von Klassen mit definiertem Typen. Die Attribute sind in allen Instanzen einer Klasse gleich, allerdings können sich Instanzen in ihren Attributwerten unterscheiden.
@@ -57,7 +63,7 @@
 			<figcaption>Bild 3: Kennzeichnung eines abgeleiteten Attributs</figcaption>
 		</figure>
 		
-		<ul>
+		<ul class="syntax">
 			<li><b>+</b> public</li>
 			<li><b>~</b> package</li>
 			<li><b>#</b> protected</li>
@@ -78,7 +84,7 @@
 		<p>
 			Die Multiplizität gibt an, wie viele Werte ein Attribut besitzen kann. Dabei werden die untere und die obere Schranke in eckigen Klammer angegeben:
 		</p>
-		<ul>
+		<ul class="syntax">
 			<li><b>[untere Schranke .. obere Schranke]</b></li>
 			<li><b>[1..1]->[1]</b> Standard</li>
 			<li><b>[*]</b> beliebig viele</li>
@@ -99,6 +105,8 @@
 			Bei Klassenattributen handelt es sich um eine Besonderes Attribut, dessen Wert bei der Instanziierung feststeht und für alle Objekte gilt. Ein Klassenattribut wird unterstrichen notiert.
 		</p>
 		
+	<hr noshade>
+	
 	<h2>Operationen</h2>
 		<p>
 			Operationen beschreiben das Verhalten von Klassen oder deren Objekte. Eine Methode ist die Implementierung eines bestimmten Verhaltens.
@@ -111,19 +119,27 @@
 		</p>
 
 		<p>
-			Operationen werden üblicherweise im zweiten compartment notiert und folgen der Sytax:
-			<p><i>Sichtbarkeit Name ( Parameter ): Rückgabetyp {Einschränkungen}</i>.</p>
+			Operationen werden üblicherweise im zweiten compartment notiert und folgen der Syntax:
+		</p>
+		<p class="syntax">
+			<i>Sichtbarkeit Name ( Parameter ): Rückgabetyp {Einschränkungen}</i>.
+		</p>
+		<p>
 			Sichtbarkeit und Name werden dabei analog zu den Attributen verwendet, allerdings sollte als Name ein aussagekräftiges
 			Verb gewählt werden.
 		</p>
 
 		<p>
 			Parameter folgen der Syntax:
-			<p><i>Name : Typ [Multiplizität] = DefaultWert {Einschränkungen}</i>.</p>
+		</p>
+		<p class="syntax">
+			<i>Name : Typ [Multiplizität] = DefaultWert {Einschränkungen}</i>.
+		</p>
+		<p>
 			Name, Typ, Multiplizität und Einschränkungen sind dabei analog zu den Attributen zu verwenden.
-			<p>
-				Der DefaultWert beschreibt den Standeardwert, der übergeben wird, falls kein Wert explizit übergeben wurde.
-			</p>
+		</p>
+		<p>		
+			<em>Der DefaultWert beschreibt den Standardwert, der übergeben wird, falls kein Wert explizit übergeben wurde.</em>
 		</p>
 		<p>
 			Der Rückgabewert einer Operation ist optional anzugeben und ist entweder ein Datentyp oder eine Klasse.
@@ -131,7 +147,7 @@
 		</p>
 		<p>
 			Für die Einschränkungen gibt es bei Operationen folgenden Möglichkeiten:
-			<ul>
+			<ul class="syntax">
 				<li><b>Preconditions:</b> zu erfüllende Bedingungen für die aktivierung der Operation</li>
 				<li><b>Postconditions:</b> Zusicherung über den Zustand des Systems nach der Ausführung</li>
 				<li><b>Body conditions:</b> Einschränkungen des Rückgabewerts</li>
@@ -141,6 +157,8 @@
 		Operationen müssen innerhalb einer Klasse eindeutig sein und unterscheiden sich in Name, Parameterliste und Rückgabetyp.
 		Abstrakte Operationen existieren in abstrakten Klassen und haben keine Methode, nur eine Signatur. Sie können nicht aktiviert werden.
 		</p>
+		
+		<hr noshade>
 
 		<h2>Beziehungen</h2>
 
@@ -166,7 +184,7 @@
 					eine Aggregation durch eine leere Raute mit der Kardinalität 0..*. Eine Komposition ist ein
 					Spezialfall der Aggregation und bedient den Fall, dass die Teile nicht ohne ihr Ganzes existieren können (Existenzabhängigkeit).
 					Ein Beispiel für den Unterschied wäre:
-					<ul>
+					<ul class="syntax">
 						<li>(Komposition:) Ein Raum kann nicht ohne Gebäude existieren.</li>
 						<li>(Aggregation:) Ein Student kann ohne Vorlesung existieren.</li>
 					</ul>
@@ -188,7 +206,9 @@
 						<figcaption>Bild 7: Beispiel für eine Aggregation und Komposition</figcaption>
 					</figure>
 				</figure>
-
+		
+		<hr noshade>
+		
 		<h2>Das Klassendiagramm</h2>
 			<p>
 				Im Klassendiagramm werden nun die aus der Realität möglicherweise mittels Objektdiagramm abgeleiteten
@@ -198,7 +218,7 @@
 
 			<p>
 				Um die Erstellung von Klassendiagrammen oder Objektdiagrammen auszuprobieren gibt es unter diesem Link
-				einen simplen UML-Editor: <a href="UML-editor/index.html">UML-Editor</a>
+				einen simplen UML-Editor: <a href="https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/17594875911/CourseNode/97962905782595?12">UML-Editor</a>
 			</p>
 
 		<figure class="einzel" style="width:600px;">
