@@ -1,0 +1,18 @@
+﻿public class Konto {
+     String bezeichnung;
+     Geldbetrag saldo();
+     einzahlen (Geldbetrag betrag);
+}
+
+public class Kunde();
+
+public class Privatkunde extends Kunde {
+      String vorname;
+      String nachname;
+}
+
+public class Geschäftskunde extends Geschäftskunde {
+       String firmenname;
+}
+
+public class Adresse();
