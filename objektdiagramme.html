@@ -14,8 +14,18 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script language="javascript">
+		var hidden = true
 		function einblenden() {
+		if(hidden){
 			 $("#loesung").css("display", "block");
+			 $("#button").text("Lösung verbergen");
+			 hidden = false;
+			 }
+		else{
+			$("#loesung").css("display", "none");
+			$("#button").text("Lösung");
+			hidden = true;
+			}
 		}
 	</script> 
 
@@ -59,7 +69,7 @@
 			</p>
 			<p>
 				<b>Übungsaufgabe:</b> Wie würde der Student Ben, der 24 Jahre alt ist und im Hauptfach Informatik studiert als Objekt mit den Attributen: Name, Alter und Hauptfach modelliert werden?
-				<button onclick="einblenden()">Lösung</button>
+				<button id="button" onclick="einblenden()">Lösung</button>
 			</p>
 			
 			<figure class="einzel" id="loesung" style="display:none;width:500px;">
