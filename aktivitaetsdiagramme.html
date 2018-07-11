@@ -41,7 +41,7 @@
 		<h3>Entscheidungsknoten</h3>
 		<figure class="right einzel" style="width:400px;">
 			<img src="bilder/aktivitaetsdiagramme/entscheidungsknoten.PNG" style="width:400px;" />
-			<figcaption>Bild 1: Beispiel für einen Entscheidungsknoten</figcaption>
+			<figcaption>Bild 2: Beispiel für einen Entscheidungsknoten</figcaption>
 		</figure>
 		<p>
 			Ein Entscheidungsknoten definiert alternative Zweige im Tokenfluss und stellt somit eine Art Weiche dar. Er kann auch für die Modellierung von Schleifen genutzt werden.
@@ -54,4 +54,20 @@
 		</p>
 		
 		<h3>Parallelisierungsknoten</h3>
+		<figure class="right einzel" style="width:400px;">
+			<img src="bilder/aktivitaetsdiagramme/parallelisierungsknoten.PNG" style="width:400px;" />
+			<figcaption>Bild 3: Ein Aktivitätsdiagramm mit Parallelisierungs- und Synchronisierungsknoten</figcaption>
+		</figure>
+		<p>
+			Ein Parallelisierungsknoten modelliert eine Aufspaltung von Abläufen. Eingehende Token werden für alle Kanten dupliziert, sobald eine Überwachungsbedingung sie akzeptiert.
+			Nichtakzeptierte Token werden aufbewahrt. Ein Synchronisierungsknoten führt nebenläufige Abläufe wieder zusammen. Die Token werden vereinigt, sobald sie an allen
+			Kanten vorhanden sind. An einer Kante anliegende Kontrolltoken werden vereinigt, Kontrollknoten verschiedener Kanten werden vereinigt und als einziges Token weitergereicht.
+			Datentoken werden alle weitergereicht. Parallelisierungsknoten und Synchronisierungsknoten können auch vereinigt werden.
+		</p>
+		
+		<h3>Objektknoten</h3>
+		<p>
+			Objektknoten beinhalten Datentoken und stehen durchObjektflüsse miteinander in Beziehung. Der Inhalt ergibt sich aus einer Aktion und Eingabe für weitere Aktion.
+			Typeingabe und Zustandsbeschränkungen sind dabei optional. Sie können als Parameter für Aktivitäten (activity parameter node) oder Aktionen (pins) dienen.
+		</p>
 </html>
