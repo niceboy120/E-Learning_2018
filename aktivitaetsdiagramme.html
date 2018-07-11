@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+
+  <title>Aktivitätsdiagramme</title>
+  <meta name="description" content="UML-Modellierung, Elearning">
+  <meta name="author" content="Gleißner, André und Brandt, Leon">
+	<link rel="stylesheet" href="style.css">
+
+<body>
+	<h1>2.2.1. Aktivitätsdiagramme</h1>
+	<p>
+		Aktivitätsdiagramme beschreiben meist den Ablauf eines Anwendungsfalles, können allerdings auch zur Modellierung aller weiteren Aktivitäten innerhalb
+		eines Systems verwendet werden. Dabei ist es auch möglich, asynchrone Kommunikationsmechanismen einzubinden (Signal senden/empfangen, Ausnahmebehandlung)
+		und somit Nebenläufige Systeme darzustellen. Ein Aktivitätsdiagramm stellt eine objektorientierte Adaption eines Programmablaufplans dar.
+	</p>
+	
+	<h2>Aufbau</h2>
+		<h3>Aktivität</h3>
+		<figure class="right einzel" style="width:500px;">
+			<img src="bilder/aktivitaetsdiagramme/bsp_aktivitaet.PNG" style="width:500px;" />
+			<figcaption>Bild 1: Einfaches Beispiel für eine Aktivität</figcaption>
+		</figure>
+		<p>
+			Eine Aktivität beschreibt Abläufe, aus mehreren elementaren Aktionen. Der Ablauf kann parallelisiert und synchronisiert, sowie durch Bedingungen geteilt
+			und wieder zusammengeführt werden. Operationen, die z. B. in Klassendiagrammen existieren können als Aktivität dargestellt werden.
+			Der Ablauf einer Aktivität wird durch den Tokenfluss bestimmt. Ein Token ist dabei ein virtueller Koordinationsmechanismus; d.h. er beschreibt einen möglichen
+			Ablauf einer Aktivität zur Laufzeit. Er fließt entlang der Kanten von Vorgänger- zu Nachfolgerknoten. Man unterscheidet zwischen <em>Kontroll-</em> und <em>Datentoken</em>.
+			Kontrollknoten beschreiben eine "Ausführungserlaubnis" für den Folgeknoten und Datenknoten transportieren Daten oder Referenzen. 
+		</p>
+		
+		<h3>Beginn und Ende von Aktivitäten und Abläufen</h3>
+		<p>
+			Ein Aktivitätsablauf beginnt in einem Initialknoten, der im Diagramm als ausgefüllter Kreis dargestellt wird. Es können ein oder mehrere Initialknoten existieren, 
+			wodurch Nebenläufigkeit dargestellt werden kann. Ein Aktivitätsendknoten wird als unausgefüllter Kreis mit einem kleineren, ausgefüllten Kreis in seinem Mittelpunkt dargestellt. 
+			Er beendet alle Abläufe einer Aktivität; der erste Token, der zu ihm gelangt beendet die Aktivität. Kontrolltoken werden gelöscht, Datenknoten hingegen nicht.
+			Pro Aktivität sind mehrere Aktivitätsendknoten erlaubt. Ein Ablaufendknoten beendet den Ablauf einer Aktivität. Er wird durch einen durchkreuzten Kreis dargestellt.
+		</p>
+		<h3>Entscheidungsknoten</h3>
+		<figure class="right einzel" style="width:400px;">
+			<img src="bilder/aktivitaetsdiagramme/entscheidungsknoten.PNG" style="width:400px;" />
+			<figcaption>Bild 1: Beispiel für einen Entscheidungsknoten</figcaption>
+		</figure>
+		<p>
+			Ein Entscheidungsknoten definiert alternative Zweige im Tokenfluss und stellt somit eine Art Weiche dar. Er kann auch für die Modellierung von Schleifen genutzt werden.
+			Überwachungsbedingungen werden an den ausgehenden Zweigen notiert und wählen den Zweig aus. [else] ist dabei als Standard vordefiniert. Ein Entscheidungsverhalten kann
+			an den Knoten annotiert werden und wird durch das Kennwort <code>&lt;&lt;decisionInput&gt;&gt;</code> gekennzeichnet. Es ermöglich eine genaue Spezifikation der Auswahlentscheidung.
+		</p>
+		<p>
+			Die Zusammenführung alternativer Abläufe erfolgt durch einen Vereinigungsknoten. Er reicht die Token so bald wie möglich an den Nachfolgerknoten weiter. Dabei kann
+			Ein Vereinigungsknoten gleichzeitig ein Entscheidungsknoten sein.
+		</p>
+		
+		<h3>Parallelisierungsknoten</h3>
+</html>
