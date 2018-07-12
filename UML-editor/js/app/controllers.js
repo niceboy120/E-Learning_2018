@@ -4,7 +4,7 @@
 	function ($scope, $http, notify, XMIService){
 		  
       notify({
-  		        message: "Спасибо, что посетили проект",		            
+  		        message: "Willkommen im UML-Editor",		            
   		        templateUrl: '',
   		        position: 'left',
   		        classes: '',
@@ -473,16 +473,32 @@
 	  $scope.exportXMI = function(){
 	  	// вызываем сервис XMIService, передаем в него все элементы диаграммы, возвратит XMI в строке
         var content = XMIService.export(graph.toJSON().cells);
-        if (content){
+        /*if (content){
           var blob = new Blob([content], { type: 'text/plain' });
           var downloadLink = angular.element('<a></a>');
           downloadLink.attr('href',window.URL.createObjectURL(blob));
           downloadLink.attr('download', 'diagram.xmi');
           downloadLink[0].click();         
           downloadLink = undefined;
-        }
-      }
+        /
+		}*/
+		download("diagram.uml",content);
+      };
+	  
+	  function download(filename, text) {
+	  var element = document.createElement('a');
+	  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+	  element.setAttribute('download', filename);
 
-	});
+	  element.style.display = 'none';
+	  document.body.appendChild(element);
+
+	  element.click();
+
+	  document.body.removeChild(element);
+	};
+
+
+});
 	
 	
