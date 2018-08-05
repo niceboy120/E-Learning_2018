@@ -12,5 +12,62 @@
 <body>
 	<h1>2.3.4. Anwendungsfalldiagramme</h1>
 	
+	<p>
+		Ein Anwendungsfalldiagramm stellt das erwartete Verhalten eines Systems dar. Dafür werden Anwendungsfälle und Akteure mit ihren jeweiligen Abhängigkeiten und
+		Beziehungen dargestellt. Es wird dafür eingesetzt, Anforderungen an ein System zu spezifizieren, stellt dabei allerdings keine Ablaufbeschreibung dar. Diese
+		können mittels Aktivitäts- oder Sequenzdiagrammen deutlich gemacht werden.
+	</p>
+	
+	<hr noshade>
+	
+	<h2>Akteure</h2>
+		<p>
+			Akteure werden als "Strichmännchen" notiert und können sowohl Personen (charakterisiert durch Rollen) als auch Systeme darstellen. Wobei bei Systemen auch 
+			anderweitige Symbole (Bsp. ein Bandsymbol) genutzt werden können.
+		</p>
+		
+	<hr noshade>
+		
+	<h2>Anwendungsfälle</h2>
+		<p>
+			Anwendungsfälle beschreiben das von einem System erwartet Verhalten. Sie werden durch eine Sammlung von Kundenwünschen festgestellt und als Ellipse notiert.
+		</p>
+		
+	<hr noshade>
+	
+	<h2>Assoziationen</h2>
+		<p>
+			Assoziationen zwischen Akteuren und Anwendungsfällen werden durch eine Linie gekennzeichnet. Diese können gegebenenfalls mit Multiplizitäten versehen sein.
+		</p>
+	<h2>Systemgrenzen</h2>
+		<p>
+			Die Grenzen eines Systemkontexts werden mit einem Rechteck gekennzeichnet.
+		</p>
+	
+	<hr noshade>
+	
+	<h2>include-Beziehung</h2>
+		<p>
+			Include-Beziehungen zeigen an, dass ein Anwenndungsfall das Verhalten eines anderen Anwendungsfalls einschließt. Dabei ist der eingebundene Anwendungsfall
+			unbedingt notwendig, um die Funktionalität des einbindenden Anwendungsfalls sicherzustellen. Der eingebundene Anwendungsfall kann auch separat ausgeführt werden.
+			Include-Beziehungen werden mittels eines gestrichelten Pfeils in Richtung des einzubeziehenden Anwendungsfalls und dem Schlüsselwort <code>&lt;&lt;include&gt;&gt;</code>
+			gekennzeichnet.
+		</p>
+	
+	<hr noshade>
+	
+	<h2>extend-Beziehungen</h2>
+		<p>
+			Extend-Beziehungen geben eine optionale Einbindung des Verhaltens eines Anwendungsfalls in einen anderen Anwendungsfall an. Das heißt der eine Anwendungsfall kann
+			den anderen aktivieren muss dies aber nicht. Ob dies geschieht entscheidet der einbindende Anwendungsfall. Beide Anwendungsfälle können auch separat ausgeführt werden.
+			Die Bedingungen für die Ausführung des eingebundenen Anwendungsfalls wird mit Erweiterungsschnittstellen im einbindenden Anwendungsfall und durch Erweiterungen
+			der Beziehung definiert. Eine extend-Beziehung wird durch einen gestrichelten Pfeil in Richtung des einbindenden Anwendungsfalls und dem Schlüsselwort <code>&lt;&lt;extend&gt;&gt;</code>
+			angezeigt.
+		</p>
+		
+	<figure class="einzel" style="width:600px;">
+			<img src="bilder/anwendungsfalldiagramm.png" style="width:600px;" />
+			<figcaption>Bild 1: Beispiel für ein Anwendungsfalldiagramm mit include- und extend-Beziehungen</figcaption>
+	</figure>
 </body>
 </html>

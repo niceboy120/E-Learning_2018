@@ -17,6 +17,8 @@
 		und somit Nebenläufige Systeme darzustellen. Ein Aktivitätsdiagramm stellt eine objektorientierte Adaption eines Programmablaufplans dar.
 	</p>
 	
+	<hr noshade>
+	
 	<h2>Aufbau</h2>
 		<h3>Aktivität</h3>
 		<figure class="right einzel" style="width:500px;">
@@ -31,6 +33,8 @@
 			Kontrollknoten beschreiben eine "Ausführungserlaubnis" für den Folgeknoten und Datenknoten transportieren Daten oder Referenzen. 
 		</p>
 		
+		<hr noshade>
+		
 		<h3>Beginn und Ende von Aktivitäten und Abläufen</h3>
 		<p>
 			Ein Aktivitätsablauf beginnt in einem Initialknoten, der im Diagramm als ausgefüllter Kreis dargestellt wird. Es können ein oder mehrere Initialknoten existieren, 
@@ -38,6 +42,9 @@
 			Er beendet alle Abläufe einer Aktivität; der erste Token, der zu ihm gelangt beendet die Aktivität. Kontrolltoken werden gelöscht, Datenknoten hingegen nicht.
 			Pro Aktivität sind mehrere Aktivitätsendknoten erlaubt. Ein Ablaufendknoten beendet den Ablauf einer Aktivität. Er wird durch einen durchkreuzten Kreis dargestellt.
 		</p>
+		
+		<hr noshade>
+		
 		<h3>Entscheidungsknoten</h3>
 		<figure class="right einzel" style="width:400px;">
 			<img src="bilder/aktivitaetsdiagramme/entscheidungsknoten.PNG" style="width:400px;" />
@@ -53,6 +60,8 @@
 			Ein Vereinigungsknoten gleichzeitig ein Entscheidungsknoten sein.
 		</p>
 		
+		<hr noshade>
+		
 		<h3>Parallelisierungsknoten</h3>
 		<figure class="right einzel" style="width:400px;">
 			<img src="bilder/aktivitaetsdiagramme/parallelisierungsknoten.PNG" style="width:400px;" />
@@ -64,6 +73,8 @@
 			Kanten vorhanden sind. An einer Kante anliegende Kontrolltoken werden vereinigt, Kontrollknoten verschiedener Kanten werden vereinigt und als einziges Token weitergereicht.
 			Datentoken werden alle weitergereicht. Parallelisierungsknoten und Synchronisierungsknoten können auch vereinigt werden.
 		</p>
+		
+		<hr noshade>
 		
 		<h3>Objektknoten</h3>
 		<figure class="right einzel" style="width:400px;">
