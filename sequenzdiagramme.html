@@ -11,6 +11,32 @@
 
 <body>
 	<h1>2.3.2. Sequenzdiagramme</h1>
+	
+	<p>
+		Sequenzdiagramme sind Verhaltensdiagramme, die den Austausch von Nachrichten zwischen Objekten mithilfe von Lebenslinien darstellen.
+		Dabei repräsentiert ein Sequenzdiagramm in der Regel einen möglichen Pfad durch einen Entscheidungsbaum eines Systems. Für die Darstellung
+		aller Möglichkeiten sind daher Zustands- oder Aktivitätsdiagramme besser geeignet.
+	</p>
+	
+	<hr noshade>
+	
+	<h2>Lebenslinien und Nachrichten</h2>
+	
+	<figure class="right einzel" style="width:300px;">
+			<img src="bilder/sequenzdiagramme/sequenzdiagramm1.png" style="width:300px;" />
+			<figcaption>Bild 1: Beispiel für ein Sequenzdiagramm</figcaption>
+	</figure>
+	
+	<p>
+		Auf Bild 1 ist ein Sequenzdiagramm mit Kopf- und Inhaltsbereich zu sehen. Der Kopfbereich ist meist mit <i>sd</i> oder mit <i>interaction</i> gekennzeichnet.
+		Die beiden gestrichelten Linien, die von den Kommunikationspartnern senkrecht nach unten ausgehen sind die Lebenslinien. Auf diesen sind zwei Funktionsaufrufe
+		als asynchrone Nachrichten zu erkennen. Sie werden durch einen Pfeil mit ausgefüllter Pfeilspitze dargestellt und sind mit dem Namen der Nachricht versehen.
+		Asynchrone Nachrichten werden durch eine unausgefüllte Pfeilspitze dargestellt. Bei synchronen Nachrichten ist die ausgehende Lebenslinie nach dem Aufruf
+		für weitere Interaktionen gesperrt, bis eine Antwort erhalten wurde. Bei asynchronen Nachrichten ist dies nicht der Fall.
+		Die Rechtecke, die auf den Lebenslinien zu sehen sind, sind die Aktivierungsbalken. Sie zeigen an, zu welcher Zeit ein Objekt aktiv an einer Interaktion beteiligt ist.
+	</p>
+	
+	
 
 </body>
 </html>
