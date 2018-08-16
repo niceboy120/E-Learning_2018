@@ -11,6 +11,102 @@
 
 <body>
 	<h1>2.3.3. Zustandsdiagramme</h1>
+	
+	<p>
+		Zustandsdiagramme beschreiben die möglichen Folgen von Zuständen eines Objektes einer bestimmten Klasse. Dabei werden die Zustände moddeliert, in dem sich Objekte einer Klasse befinden können,
+		Transitionen von einem zum anderen Zustand, Ereignisse, die Transitionen auslösen und Aktivitäten die in Zuständen ausgeführt werden. Mithilfe dieser Elemente wird der Lebenslauf (Erzeugung
+		bis Destruktionen) eines Objektes dargestellt.
+	</p>
+	
+	<hr noshade>
+	
+	<h2>Zustände</h2>
+	<p>
+		Bei Zuständen wird zwischen "echten" und Pseudozuständen unterschieden. Echte Zustände sind Zustände im eigentlichen Sinn und zeichnen sich dadurch aus, dass ein System sich dauerhaft in diesem
+		Zustand befinden kann. Der Endknoten zählt auch als "echter" Zustand. Pseudozustände wiederum sind Zustände, in denen sich ein System nicht dauerhaft befinden kann. Dazu gehören der Startknoten, 
+		Parallelisierungsknoten, Terminierungsknoten oder auch der Entscheidungsknoten. Zustände können auch zu komplexen Zuständen zusammengefasst werden, welche mehrere Zustände beinhalten.
+	</p>
+	
+	<hr noshade>
+	
+	<h2> Aktivitäten innerhalb eines Zustandes </h2>
+	<p>
+		Es wird zwischen vier Arten von Aktivitäten unterschieden:
 		
+		<ul>
+			<li><em>entry:</em> Die Aktivität wird beim Eingang in den Zustand ausgeführt. </li>
+			<li><em>exit:</em> Die Aktivität wird beim Verlassen des Zustandes ausgeführt. </li>
+			<li><em>do:</em> Die Aktivität wird kontinuierlich ausgeführt, dabei sind Parameter erlaubt </li>
+			<li><em>event:</em> Wird ausgeführt, wenn sich das System in dem Zustand befindet und ein Ereignis eintritt. </li>
+		</ul>
+	</p>
+	
+	<hr noshade>
+	
+	<h2>Zustandsübergänge</h2>
+	<p>
+		Zustandsübergänge werden ausgeführt, wenn das Übergangsereignis eintritt und die Bedingungen ("guards") erfüllt sind. Eventuell andauernde Aktivitäten werden unterbrochen. Sollte eine Bedingung
+		nicht erfüllt sein, geht das Ereignis "verloren". Durch Bedingungen können Entscheidungsbäume modelliert werden. Wird kein Übergangsereignis angegeben, so wird das Ereignis "Aktivität ist
+		abgeschlossen" als Standardwert verwendet.
+	</p>
+	
+	<hr noshade>
+	
+	<h2>Basiselemente</h2>
+	<p>
+		In den Abbildungen 1-7 sind die Basiselemente eines Zustandsdiagrammes und ihre Funktion grafisch dargestellt. 
+	</p>
+	
+	<figure class="gesamt">
+		<figure class="einzel" style="width:250px;">
+			<img src="bilder/zustandsdiagramme/Zustand.PNG" style="width:250px;" />
+			<figcaption>Bild 1: Zustand: Bei Erreichen des Zustands Z wird die Aktivität a1 ausgeführt, während Z der aktuelle Zustand ist, wird a2 ausgeführt und beim Verlassen von Z wird a3 ausgeführt.</figcaption>
+		</figure>
+
+		<figure class="einzel" style="width:250px;">
+			<img src="bilder/zustandsdiagramme/transition.PNG" style="width:250px;" />
+			<figcaption>Bild 2: Transition: Zustandsübergang.</figcaption>
+		</figure>
+
+		<figure class="einzel" style="width:250px;">
+			<img src="bilder/zustandsdiagramme/startzustand.PNG" style="width:250px;" />
+			<figcaption>Bild 3: Startzustand: Beginn eines Zustandsdiagramms.</figcaption>
+		</figure>
+		
+		<figure class="einzel" style="width:250px;">
+			<img src="bilder/zustandsdiagramme/endzustand.PNG" style="width:250px;" />
+			<figcaption>Bild 3: Endzustand: Ende eines Zustandsdiagramms.</figcaption>
+		</figure>
+		
+		<figure class="einzel" style="width:250px;">
+			<img src="bilder/zustandsdiagramme/terminierungsknoten.PNG" style="width:250px;" />
+			<figcaption>Bild 4: Terminierungsknoten: Modelliertes Objekt hört auf zu existieren.</figcaption>
+		</figure>
+		
+		<figure class="einzel" style="width:250px;">
+			<img src="bilder/zustandsdiagramme/entscheidungsknoten.PNG" style="width:250px;" />
+			<figcaption>Bild 5: Entscheidungsknoten: Von diesem Knoten können mehrere alternative Transitionen ausgehen.</figcaption>
+		</figure>
+		
+		<figure class="einzel" style="width:250px;">
+			<img src="bilder/zustandsdiagramme/parallelisierungsknoten.PNG" style="width:250px;" />
+			<figcaption>Bild 6: Parallelisierungsknoten: Aufspaltung des Kontrollflusses in mehrere parallele Zustände.</figcaption>
+		</figure>
+		
+		<figure class="einzel" style="width:250px;">
+			<img src="bilder/zustandsdiagramme/synchronisierungsknoten.PNG" style="width:250px;" />
+			<figcaption>Bild 7: Synchronisierungsknoten: Zusammenführung des Kontrollflusses von mehreren parallelen Zuständen.</figcaption>
+		</figure>
+	</figure>
+	
+	<hr noshade>
+	
+	<h2>Beispiel</h2>
+	
+	<figure class="einzel" style="width:300px;">
+			<img src="bilder/zustandsdiagramme/zustandsdiagramm.png" style="width:300px;" />
+			<figcaption>Bild 8: Beispiel für ein Zustandsdiagramm</figcaption>
+	</figure>
+	
 </body>
 </html>
