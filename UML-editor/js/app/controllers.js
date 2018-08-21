@@ -482,7 +482,7 @@
           downloadLink = undefined;
         /
 		}*/
-		download("diagram.uml",content);
+		download("diagram.xmi",content);
       };
 	  
 	  function download(filename, text) {
