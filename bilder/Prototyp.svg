@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="5.6770835in"
+   height="1.8125in"
+   viewBox="0 0 545 174"
+   id="svg3924"
+   style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;font-family:Dialog">
+  <defs
+     id="genericDefs">
+    <defs
+       id="defs1">
+      <clipPath
+         id="clipPath1">
+        <path
+           d="m 0,-5 577,0 0,358 L 0,353 0,-5 z"
+           id="path3931" />
+      </clipPath>
+      <clipPath
+         id="clipPath2">
+        <path
+           d="m 32,174 577,0 0,358 -577,0 0,-358 z"
+           id="path3934" />
+      </clipPath>
+    </defs>
+  </defs>
+  <rect
+     width="182"
+     height="56"
+     x="385"
+     y="287"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="rect3944"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+  <line
+     y2="307"
+     x1="385"
+     clip-path="url(#clipPath2)"
+     x2="567"
+     y1="307"
+     id="line3946"
+     style="fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     transform="translate(-32,-179)" />
+  <line
+     y2="317"
+     x1="385"
+     clip-path="url(#clipPath2)"
+     x2="567"
+     y1="317"
+     id="line3948"
+     style="fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     transform="translate(-32,-179)" />
+  <text
+     x="388"
+     y="332"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="text3950"
+     style="fill:#000028;stroke:none;font-family:sans-serif">klone()</text>
+  <text
+     x="403.5"
+     y="302"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="text3952"
+     style="font-weight:bold;stroke:none;font-family:sans-serif">KonkreterPrototyp2</text>
+  <rect
+     width="182"
+     height="53"
+     x="168"
+     y="287"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="rect3956"
+     style="font-weight:bold;fill:#ffffff;stroke:none;font-family:sans-serif" />
+  <rect
+     width="182"
+     height="53"
+     x="168"
+     y="287"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="rect3958"
+     style="font-weight:bold;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+  <line
+     clip-path="url(#clipPath2)"
+     x1="168"
+     x2="350"
+     y1="307"
+     y2="307"
+     id="line3960"
+     style="font-weight:bold;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif"
+     transform="translate(-32,-179)" />
+  <line
+     clip-path="url(#clipPath2)"
+     x1="168"
+     x2="350"
+     y1="317"
+     y2="317"
+     id="line3962"
+     style="font-weight:bold;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif"
+     transform="translate(-32,-179)" />
+  <text
+     x="171"
+     y="332"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="text3964"
+     style="font-weight:normal;fill:#000028;stroke:none;font-family:sans-serif">klone()</text>
+  <text
+     x="186.5"
+     y="302"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="text3966"
+     style="font-weight:bold;fill:#000000;stroke:none;font-family:sans-serif">KonkreterPrototyp1</text>
+  <rect
+     width="119"
+     height="53"
+     x="308"
+     y="189"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="rect3968"
+     style="font-weight:bold;fill:#ffffff;stroke:none;font-family:sans-serif" />
+  <rect
+     width="119"
+     height="53"
+     x="308"
+     y="189"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="rect3970"
+     style="font-weight:bold;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+  <line
+     clip-path="url(#clipPath2)"
+     x1="308"
+     x2="427"
+     y1="209"
+     y2="209"
+     id="line3972"
+     style="font-weight:bold;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif"
+     transform="translate(-32,-179)" />
+  <line
+     clip-path="url(#clipPath2)"
+     x1="308"
+     x2="427"
+     y1="219"
+     y2="219"
+     id="line3974"
+     style="font-weight:bold;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif"
+     transform="translate(-32,-179)" />
+  <text
+     x="311"
+     y="234"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="text3978"
+     style="font-style:italic;fill:#000028;stroke:none;font-family:sans-serif">klone()</text>
+  <text
+     x="338"
+     y="204"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="text3980"
+     style="font-style:italic;font-weight:bold;fill:#000000;stroke:none;font-family:sans-serif">Prototyp</text>
+  <rect
+     width="119"
+     height="40"
+     x="42"
+     y="189"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="rect3982"
+     style="font-style:italic;fill:#ffffff;stroke:none;font-family:sans-serif" />
+  <rect
+     width="119"
+     height="40"
+     x="42"
+     y="189"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="rect3984"
+     style="font-style:italic;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+  <line
+     clip-path="url(#clipPath2)"
+     x1="42"
+     x2="161"
+     y1="209"
+     y2="209"
+     id="line3986"
+     style="font-style:italic;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif"
+     transform="translate(-32,-179)" />
+  <line
+     clip-path="url(#clipPath2)"
+     x1="42"
+     x2="161"
+     y1="219"
+     y2="219"
+     id="line3988"
+     style="font-style:italic;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif"
+     transform="translate(-32,-179)" />
+  <text
+     x="82"
+     y="204"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="text3992"
+     style="font-weight:bold;stroke:none;font-family:sans-serif">Klient</text>
+  <path
+     d="m 303,204 5,3 -5,3"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="path3994"
+     style="font-weight:bold;fill:none;stroke:#424242;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+  <path
+     d="m 308,207 -147,0"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="path3996"
+     style="font-weight:bold;fill:none;stroke:#424242;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+  <polygon
+     points="364,249 372,249 368,242 "
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="polygon3998"
+     style="font-weight:bold;fill:none;stroke:#424242;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+  <path
+     d="m 368,249 0,17 -109,0 0,21"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="path4000"
+     style="font-weight:bold;fill:none;stroke:#424242;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+  <polygon
+     points="364,249 372,249 368,242 "
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="polygon4002"
+     style="font-weight:bold;fill:none;stroke:#424242;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+  <path
+     d="m 368,249 0,17 108,0 0,21"
+     transform="translate(-32,-179)"
+     clip-path="url(#clipPath2)"
+     id="path4004"
+     style="font-weight:bold;fill:none;stroke:#424242;stroke-linecap:butt;stroke-linejoin:round;font-family:sans-serif" />
+</svg>

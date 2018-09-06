@@ -12,17 +12,31 @@
 <body>
 	<h1>3.1. Design Patterns</h1>
 
-	<p>Design Patterns (Entwurfsmuster) sind (Muster-)Lösungen für wiederkehrende Probleme beim Entwurf von Software. Sie erleichtern die Entwicklung und Architektur von großen Softwareprojekten. Dabei ist zu beachten, das es Muster sind und kein fertiger Quellcode.</p>
+	<p>Design Patterns (Entwurfsmuster) sind (Muster-)Lösungen für wiederkehrende Probleme beim Entwurf von Software. Sie erleichtern die Entwicklung und Architektur von großen Softwareprojekten. Dabei ist zu beachten, dass es Muster sind und kein fertiger Quellcode. Ihren Ursprung haben die Entwurfsmuster in der Architektur, jedoch konnten sie sich dort nicht so durchsetzen, wie in der Softwareentwicklung.</p>
 	
 	<h2>Arten</h2>
 	
 	<p>Es gibt drei Arten von Design Patterns:</p>
 	
 	<ul>
-		<li>Erzeugungsmuster</li>
-		<li>Strukturmuster</li>
-		<li>Verhaltensmuster</li>
+		<li><b>Erzeugungsmuster:</b></li>
+			<p>Diese Muster sind zum Erzeugen von Objekten gedacht. Sie trennen damit Konstruktion und Repräsentation eines Objektes.</p>
+		<li><b>Strukturmuster:</b></li>
+			<p>Mithilfe dieser Schablonen, lassen sich Beziehungen zwischen Klassen/Entitäten herstellen, wodurch der Entwurf erleichtert wird.</p>
+		<li><b>Verhaltensmuster:</b></li>
+			<p>Das komplexe Verhalten von Software kann mit diesen Mustern modelliert werden. Dadurch wird die Flexibilität der Software erhöht.</p>
 	</ul>
+	
+	<p>Des Weiteren kamen später Muster für <b>objektrelationale Abbildungen</b> hinzu. Diese beziehen sich auf die Objekte und Beziehungen in einer relationalen Datenbank. Es gibt aber auch noch weitere Muster, die in keine der Arten zugeordnet werden. Ein sehr bekanntes ist das MVC-Pattern.</p>
+	
+	<h2>Beispiel</h2>
+	
+	<figure class="right einzel" style="width:500px;">
+			<a href="https://de.wikipedia.org/wiki/Datei:Prototyp.svg"> <img src="bilder/Prototyp.svg" style="width:500px;" /> </a>
+			<figcaption>Bild 1: Das Prototyp Design Pattern.</figcaption>
+	</figure>
+	
+	<p>Bei dem Prototyp Entwurfsmuster (siehe Bild rechts) werden (neue) Kopien eines Objektes aus Vorlagen erzeugt. Dabei kann sich die Kopie an neue Umstände anpassen. Beispielsweise kann man so eine Kopie eines Objektes der Klasse "Schuh" erstellen und anschließend die Informationen zu dieser Kopie anpassen.</p>
 	
 	<h2>Auflistung einiger Design Patterns</h2>
 	
@@ -35,11 +49,13 @@
 		<li>Iterator</li>
 		<li>Object Adapter</li>
 		<li>Observer</li>
+		<li>Prototyp</li>
 		<li>Proxy</li>
 		<li>Singleton</li>
 		<li>State</li>
 		<li>Strategy</li>
 		<li>Template Method</li>
+		<li>Visitor</li>
 	</ul>
 	
 	<p>Eine größere Liste und weitere Informationen finden Sie auf <a href="https://de.wikipedia.org/wiki/Entwurfsmuster#Liste_von_Mustern">Wikipedia</a>.</p>
